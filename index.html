@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethernames</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Shout your name to the whole world?</h2>
+        
+        <section class="form">
+            <fieldset>
+                <legend>Ehternames</legend>
+
+                <label>Lastname:</label>
+                <input type="text" id="lastname" alt="lastname" placeholder="Lastname"><br>
+
+                <label>Firstname:</label>
+                <input type="text" id="firstname" alt="firstname" placeholder="firstname"><br>
+
+                <label>Middle Initial:</label>
+                <input type="text" id="middle_initial" alt="middle_initial" placeholder="middle name" maxlength="2"><br>
+
+                <label>Birthday</label>
+                <input type="date" id="birthday"><br>
+
+                <label>Gender</label>
+                <input type="radio" name="gender_choice" value="Male" id="m">Male
+                <input type="radio" name="gender_choice" value="Female" id="f"> Female<br>
+                
+                <button type="button" onclick="submitter()" id="submit">Shout your name!</button>
+            </fieldset>
+        </section>
+
+        <br><br><br>
+
+        <section class="name-displayed">
+            <fieldset>
+                <legend>Name displayed</legend>
+                <table border="1" id="namesTable">
+                    <thead>
+                        <tr>
+                            <th>Last name</th>
+                            <th>First name</th>
+                            <th>M.I.</th>
+                            <th>Birthday</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        </tbody>
+                </table>
+            </fieldset>
+        </section>
+    </div>
+
+</body>
+</html>

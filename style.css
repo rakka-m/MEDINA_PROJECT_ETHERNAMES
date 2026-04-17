@@ -1,0 +1,25 @@
+html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: rgb(255, 255, 255);
+            margin: 0 10%;
+        }
+        label {
+            margin: 0 20%;
+        }
+        .wrapper {
+            background-color: rgb(251, 245, 255);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        table {
+            width: 100%;
+            background-color: white;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
